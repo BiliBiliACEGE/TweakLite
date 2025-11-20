@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "assist",
+	"id": "tweaklite",
 	"version": "${version}",
-	"name": "Assist",
+	"name": "TweakLite",
 	"description": "This mod is the first mod Ace made using malilib, Please do not compare Tweakeroo with this mod.\n这个模组是Ace使用malilib制作的第一个模组, 请不要用Tweakeroo和这个模组做对比",
 	"authors": [
 		"Ace"

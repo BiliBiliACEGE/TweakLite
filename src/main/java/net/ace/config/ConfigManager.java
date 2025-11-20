@@ -47,9 +47,9 @@ public class ConfigManager {
         private static Tab selectedTab = Tab.GENERIC;
 
         public enum Tab {
-            GENERIC("Generic", "assist.tab.generic", ClientConfigs.GENERIC_CONFIGS),
-            SURVIVAL("Survival", "assist.tab.survival", ClientConfigs.SURVIVAL_CONFIGS),
-            CREATIVE("Creative", "assist.tab.creative", ClientConfigs.CREATIVE_CONFIGS);
+            GENERIC("Generic",  TweakLite.MOD_ID + ".tab.generic", ClientConfigs.GENERIC_CONFIGS),
+            SURVIVAL("Survival", TweakLite.MOD_ID + ".tab.survival", ClientConfigs.SURVIVAL_CONFIGS),
+            CREATIVE("Creative", TweakLite.MOD_ID + ".tab.creative", ClientConfigs.CREATIVE_CONFIGS);
 
             private final String translationKey;
             private final List<fi.dy.masa.malilib.config.IConfigBase> configs;
