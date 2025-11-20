@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "net.ace.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "GoatEntityMixin",
+    "MainMixin",
+    "MixinServerPlayer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "MixinCopyEntityNBT",
+    "MixinLocalPlayer",
+    "PumpkinBlurMixin"
+  ]
+}

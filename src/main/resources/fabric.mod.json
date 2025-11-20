@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "assist",
+	"version": "${version}",
+	"name": "Assist",
+	"description": "This mod is the first mod Ace made using malilib, Please do not compare Tweakeroo with this mod.\n这个模组是Ace使用malilib制作的第一个模组, 请不要用Tweakeroo和这个模组做对比",
+	"authors": [
+		"Ace"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/BiliBiliACEGE/TweakLite"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/TweakLite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.ace.TweakLite"
+		],
+		"client": [
+			"net.ace.TweakLiteClient"
+		],
+		"modmenu": [
+			"net.ace.ModMenuImpl"
+		],
+		"fabric-datagen": [
+			"net.ace.TweakLiteDataGenerator"
+		]
+	},
+	"mixins": [
+		"TweakLite.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": ">=1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
