@@ -115,6 +115,8 @@ public class ClientConfigs {
     static {
         // 通用配置
         GENERIC_CONFIGS.add(OPEN_GUI);
+        GENERIC_CONFIGS.add(APPLY_PLAYER_SCALE_KEY);
+        GENERIC_CONFIGS.add(APPLY_ENTITY_SCALE_KEY);
 
         // 生存页配置（服务端需要同步的）
         SURVIVAL_CONFIGS.add(PLAYER_ATTACK_RANGE);
@@ -123,8 +125,6 @@ public class ClientConfigs {
         SURVIVAL_CONFIGS.add(SHEARED_GOAT_HORN);
         SURVIVAL_CONFIGS.add(PLAYER_SCALE_SIZE);
         SURVIVAL_CONFIGS.add(ENTITY_SCALE_SIZE);
-        SURVIVAL_CONFIGS.add(APPLY_PLAYER_SCALE_KEY);
-        SURVIVAL_CONFIGS.add(APPLY_ENTITY_SCALE_KEY);
 
         // 创造页配置（纯客户端功能）
         CREATIVE_CONFIGS.add(CREATIVE_COPY_SPAWN_EGG_NBT);
