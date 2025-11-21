@@ -1,7 +1,7 @@
 中文 | [English](README_en.md)
 # TweakLite
 
-TweakLite 是一个轻量级的 Fabric mod，提供一组可配置的客户端/服务端微调（tweaks），以改善玩法体验并方便调试与开发。下面的说明基于源码中 `ClientConfigs` 的配置项，列出可用的功能、默认值和快捷键。
+TweakLite 是一个轻量级的 Fabric mod，提供一组可配置的客户端/服务端微调（tweaks），以改善玩法体验。
 
 ## 快速概览
 
