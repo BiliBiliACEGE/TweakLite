@@ -1,9 +1,12 @@
 package net.ace.network;
 
+import net.ace.config.ClientConfigs;
 import net.ace.config.ServerConfigs;
+import net.ace.util.AgeLockHelper;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
@@ -31,6 +34,15 @@ public class NetworkRegistry {
                     });
                 }
         );
+        PayloadTypeRegistry.playC2S().register(AgeableLockPacket.TYPE, AgeableLockPacket.CODEC);
+        ServerPlayNetworking.registerGlobalReceiver(AgeableLockPacket.TYPE,
+                (pkt, ctx) -> ctx.server().execute(() -> {
+                    Entity e = ctx.player().level().getEntity(pkt.entityId());
+                    if (e instanceof AgeableMob mob && mob.isBaby()) {
+                        boolean lock = !AgeLockHelper.isBabyLock(mob);
+                        AgeLockHelper.setBabyLock(mob, lock);
+                    }
+                }));
 
         PayloadTypeRegistry.playC2S().register(ConfigSyncPacket.TYPE, ConfigSyncPacket.CODEC);
         ServerPlayNetworking.registerGlobalReceiver(

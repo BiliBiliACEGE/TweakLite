@@ -17,6 +17,7 @@ public class ServerConfigs {
     private static double cachedAttackRange = DEFAULT_ATTACK_RANGE;
     private static double cachedBlockRange = DEFAULT_BLOCK_RANGE;
 
+
     static {
         load();
     }

@@ -12,6 +12,7 @@
   "tweaklite.config.general.entity_scale_size": "Entity Scale Size",
   "tweaklite.config.render.noPumpkinBlur": "No Pumpkin Blur",
   "tweaklite.config.render.sheared_goat_horn": "Shearable Goat Horns",
+  "tweaklite.config.general.babies_forever" : "Babies Forever",
 
   "tweaklite.config.creative.copy_spawn_egg_nbt": "Copy Spawn Egg NBT (Ctrl+Middle Click)",
 
@@ -24,6 +25,7 @@
   "tweaklite.config.general.player_scale_size.Tooltip": "Sets the player's scale size multiplier.",
   "tweaklite.config.general.entity_scale_size.Tooltip": "Sets the scale size multiplier for targeted entities.",
   "tweaklite.config.render.sheared_goat_horn.Tooltip": "Allows shearing goat horns with shears.",
+    "tweaklite.config.general.babies_forever.Tooltip" : "Use shears on ageable entities to make them permanently stay as babies.",
 
   "tweaklite.config.creative.copy_spawn_egg_nbt.Tooltip": "Middle-click entities while holding Ctrl to copy their NBT to spawn eggs",
 

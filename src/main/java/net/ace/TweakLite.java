@@ -1,6 +1,7 @@
 package net.ace;
 
 
+import net.ace.event.ScissorInteract;
 import net.ace.network.NetworkRegistry;
 import net.fabricmc.api.ModInitializer;
 
@@ -9,5 +10,6 @@ public class TweakLite implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		NetworkRegistry.initServer();
+		ScissorInteract.register();
 	}
 }

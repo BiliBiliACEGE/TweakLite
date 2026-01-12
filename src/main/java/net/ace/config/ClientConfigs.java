@@ -76,6 +76,13 @@ public class ClientConfigs {
             CONFIG_KEY + ".config.render.sheared_goat_horn.Tooltip"
     ) {};
 
+    public static final ConfigBoolean BABIES_FOREVER = new LocalizedConfigBoolean(
+            CONFIG_KEY + ".config.general.babies_forever",
+            false,
+            CONFIG_KEY + ".config.general.babies_forever.Tooltip"
+    ) {
+    };
+
     // ---------------- 实体缩放配置 ----------------
     public static final ConfigDouble PLAYER_SCALE_SIZE = new ConfigDouble(
             CONFIG_KEY + ".config.general.player_scale_size",
@@ -125,6 +132,7 @@ public class ClientConfigs {
         SURVIVAL_CONFIGS.add(ENTITY_SCALE_SIZE);
         SURVIVAL_CONFIGS.add(SHEARED_GOAT_HORN);
         SURVIVAL_CONFIGS.add(NO_PUMPKIN_BLUR);
+        SURVIVAL_CONFIGS.add(BABIES_FOREVER);
 
         // 创造页配置（纯客户端功能）
         CREATIVE_CONFIGS.add(CREATIVE_COPY_SPAWN_EGG_NBT);
