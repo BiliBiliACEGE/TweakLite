@@ -80,8 +80,13 @@ public class ClientConfigs {
             CONFIG_KEY + ".config.general.babies_forever",
             false,
             CONFIG_KEY + ".config.general.babies_forever.Tooltip"
-    ) {
-    };
+    ) {};
+
+    public static final ConfigBoolean INVISIBLE_HOUSE = new LocalizedConfigBoolean(
+            CONFIG_KEY + ".config.render.invisible_house",
+            false,
+            CONFIG_KEY + ".config.render.invisible_house.Tooltip"
+    ) {};
 
     // ---------------- 实体缩放配置 ----------------
     public static final ConfigDouble PLAYER_SCALE_SIZE = new ConfigDouble(
@@ -132,6 +137,7 @@ public class ClientConfigs {
         SURVIVAL_CONFIGS.add(ENTITY_SCALE_SIZE);
         SURVIVAL_CONFIGS.add(SHEARED_GOAT_HORN);
         SURVIVAL_CONFIGS.add(NO_PUMPKIN_BLUR);
+        SURVIVAL_CONFIGS.add(INVISIBLE_HOUSE);
         SURVIVAL_CONFIGS.add(BABIES_FOREVER);
 
         // 创造页配置（纯客户端功能）

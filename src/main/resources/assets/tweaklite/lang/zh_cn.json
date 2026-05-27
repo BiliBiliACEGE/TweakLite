@@ -12,6 +12,7 @@
   "tweaklite.config.general.entity_scale_size": "实体缩放",
   "tweaklite.config.render.noPumpkinBlur": "移除南瓜模糊",
   "tweaklite.config.render.sheared_goat_horn": "可剪山羊角",
+  "tweaklite.config.render.invisible_house": "骑行隐藏马头",
   "tweaklite.config.general.babies_forever" : "停岁之剪",
 
   "tweaklite.config.creative.copy_spawn_egg_nbt": "复制刷怪蛋NBT (Ctrl+中键)",
@@ -25,6 +26,7 @@
   "tweaklite.config.general.player_scale_size.Tooltip": "设置玩家自身的缩放倍数",
   "tweaklite.config.general.entity_scale_size.Tooltip": "设置准星处实体的缩放倍数",
   "tweaklite.config.render.sheared_goat_horn.Tooltip": "允许使用剪刀剪下山羊角",
+  "tweaklite.config.render.invisible_house.Tooltip": "当玩家骑乘马匹时，隐藏马的头部和鬃毛渲染",
   "tweaklite.config.general.babies_forever.Tooltip" : "以剪刀右击幼年生灵，可令其永驻稚龄，再击则解。",
 
   "tweaklite.config.creative.copy_spawn_egg_nbt.Tooltip": "按住Ctrl并对准实体使用鼠标中键，将实体NBT复制到刷怪蛋",
